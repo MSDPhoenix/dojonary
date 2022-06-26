@@ -13,31 +13,36 @@
         <div id="nav">
             <h1>Dojonary</h1>
             <form action="#"><input type="text" placeholder="Search"></form>
-            <button>Login</button>
+            <button onclick="change_text(this)">Login</button>
         </div>
-        <div id="main"></div>
-        <div id="card">
-            <div id="left">
-                <h1>ninja</h1>
-                <h4>noun</h4>
-                <h5>plural: <i>ninjas</i></h5>
-                <button>13 likes</button>
+        <div id="content">
+            <div id="main">
+                <div class="card">
+                    <div class="left">
+                        <h1>ninja</h1>
+                        <h4>noun</h4>
+                        <h5>Plural: <i>ninjas</i></h5>
+                        <button onclick="like()">13 likes</button>
+                    </div>
+                    <p>A practitioner skilled in the <a href="#">Japanese</a> art of <a href="#">ninjutsu</a></p>
+                </div>
+                <div class="card">
+                    <div class="left">
+                        <h1>ninja</h1>
+                        <h4>noun</h4>
+                        <h5>Plural: <i>ninjas</i></h5>
+                        <button onclick="like()">37 likes</button>
+                    </div>
+                    <p>A <a href="">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus</p>
+                </div>
+            </div>            
+            <div id="add_definition">
+                <h3>Dojonary is defined by <b>YOU</b></h3>
+                <button onclick="remove_button(this)">Add Definition</button>
             </div>
-            <p>A practitioner skilled in the <a href="#">Japanese</a>art of <a href="#">ninjutsu</a></p>
         </div>
-        <div id="card">
-            <div id="left">
-                <h1>ninja</h1>
-                <h4>noun</h4>
-                <h5>plural: <i>ninjas</i></h5>
-                <button>37 likes</button>
-            </div>
-            <p>A <a href="">programmer</a> who breaks down problems with <a href="#">zen</a>-like focus.</p>
-        </div>
-        <div id="add_definition">
-            <h3>Dojonary is defined by <b>YOU</b></h3>
-            <button>Add Definition</button>
-        </div>
+
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
