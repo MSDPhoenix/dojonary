@@ -1,0 +1,16 @@
+* {
+    margin:0;
+    border:0;
+    padding:0;
+    box-sizing: border-box;
+    vertical-align: top;
+    outline:red 1px dotted;
+    font-size:2vw;
+}
+#wrapper {
+    width:90vw;
+    margin: 0 auto;
+}
+#nav {
+    display:flex;
+}
